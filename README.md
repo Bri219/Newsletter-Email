@@ -1,0 +1,2 @@
+# Newsletter Email
+TastyCrypto Email
