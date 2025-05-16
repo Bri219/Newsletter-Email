@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TastyCrypto Email</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+      /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; max-width: 100%; height: auto; }
+    
+    /* RESET STYLES */
+    body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
+    table { border-collapse: collapse !important; }
+    
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+    
+    /* GMAIL BLUE LINKS */
+    u + #body a {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+    }
+
+    /* SAMSUNG MAIL BLUE LINKS */
+    #MessageViewBody a {
+       color: inherit; 
+       text-decoration: none;
+       font-size: inherit;
+       font-family: inherit;
+       font-weight: inherit;
+       line-height: inherit;
+    }
+
+    /* ANDROID CENTER FIX */
+    div[style*="margin: 16px 0;"] { margin: 0 !important; }
+    
+    /* MEDIA QUERIES */
+    @media screen and (max-width: 600px) {
+      .email-container {
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+      }
+      .fluid {
+        max-width: 100% !important;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .stack-column,
+      .stack-column-center {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        direction: ltr !important;
+      }
+      .stack-column-center {
+        text-align: center !important;
+      }
+      .center-on-mobile {
+        text-align: center !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+      }
+      table.center-on-mobile {
+        display: inline-block !important;
+      }
+      *[class="mobileOff"] { 
+        width: 0px !important; 
+        display: none !important; 
+      }
+      *[class*="mobileOn"] { 
+        display: block !important; 
+        max-height: none !important; 
+      }
+      img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+      }
+      .mobile-padding {
+        padding: 8px !important;
+      }
+      .mobile-text {
+        font-size: 14px !important;
+        line-height: 1.3 !important;
+      }
+      .mobile-spacing {
+        padding: 10px 0 !important;
+      }
+      .mobile-full-width {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .mobile-hide {
+        display: none !important;
+      }
+      .mobile-show {
+        display: block !important;
+      }
+      .mobile-center {
+        text-align: center !important;
+      }
+      .mobile-no-padding {
+        padding: 0 !important;
+      }
+      .mobile-reduced-padding {
+        padding: 4px !important;
+      }
+      .mobile-table {
+        width: 100% !important;
+        min-width: 100% !important;
+      }
+      .mobile-td {
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+      }
+      .mobile-content {
+        width: 100% !important;
+        padding: 0 8px !important;
+      }
+      .mobile-image {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+      }
+      .mobile-divider {
+        width: 100% !important;
+        padding: 0 !important;
+      }
+      .mobile-footer {
+        width: 100% !important;
+        padding: 8px !important;
+      }
+      .mobile-link {
+        display: inline-block !important;
+        padding: 4px 0 !important;
+      }
+      .social-icons {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .social-icon {
+        width: 30px !important;
+        height: 30px !important;
+        padding: 0 10px !important;
+      }
+      .social-icon img {
+        width: 30px !important;
+        height: 30px !important;
+        object-fit: contain !important;
+      }
+      .horizontal-line {
+        width: 80% !important;
+        max-width: 80% !important;
+        margin: 0 auto !important;
+        padding: 0 20px !important;
+      }
+      .contact-links {
+        padding: 20px 0 !important;
+      }
+    }
+
+    /* Android-specific styles */
+    @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+      .footer-text {
+        font-size: 10px !important;
+        line-height: 1.4 !important;
+      }
+    }
+    </style>
+    
+</head>
+<body id="body" style="margin: 0 !important; padding: 0 !important; background-color: rgb(59, 59, 59);" >
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="background-color: rgb(59, 59, 59);">
+    <tr>
+      <td align="center" valign="top" style="padding: 0;">
+        <table width="600" border="0" cellspacing="0" cellpadding="0" role="presentation" class="email-container" style="background-color: rgb(15, 15, 17);">
+          <!-- TastyCrypto Image Start-->
+          <tr>
+            <td style="padding: 20px 0 0 0;">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="center">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786319/header_image_irxa1s.png" alt="tastycrypto logo" style="display:block; height:auto; border: none; text-align:center;padding:0px;" width="547.08" class="mobile-image">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- TastyCrypto Image End-->
+          <!-- Horizontal Line Section Start-->
+           <tr>
+             <td align="center" bgcolor="#0D0D11" style="padding: 20px 0;">
+             <table width="540" border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="mobile-table horizontal-line">
+              <tr>
+               <td style="border-top: 1px solid rgb(255, 255, 255); line-height: 1px; font-size: 1px; padding: 0 20px;">&nbsp;</td>
+              </tr>
+             </table>
+            </td>
+           </tr>
+           <!-- Horizontal Line Section End-->
+            <!-- Market Update Start-->
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="center" style="padding: 40px 0 0 0;">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786372/title_ourmsz.png" alt="header image" style="display:block;height:auto; border: none; text-align:center; padding:0px;" width="547.08" class="mobile-image">
+                    </a> 
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Market Update End-->
+           <!-- Horizontal Line Section Start-->
+           <tr>
+            <td align="center" bgcolor="#0D0D11" style="padding: 20px 0;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="max-width: 540px; background-color: rgb(15, 15, 17);" class="mobile-table">
+             <tr>
+              <td style="border-top: 2px solid rgb(255, 255, 255); line-height: 1px; font-size: 1px; background-color: rgb(15, 15, 17);">&nbsp;</td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+          <!-- Horizontal Line Section End-->
+            <!-- Crypto Wallet Start-->
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="center" style="padding: 20px 0 0 0;">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786351/mobile_app_img_va7emj.png" alt="mobile wallet image" style="display:block; height:auto; border: none; text-align:center;padding:0px;" width="547.08" class="mobile-image">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Crypto Wallet End-->
+            <!-- Radar Image Start-->
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="center" style="padding: 20px 0 18px 0;">
+                    <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px;" class="mobile-text">Hello my tasty friends, please find our mid-week update below.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding: 20px 0 0 0;">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786365/radar_og098r.png" alt="radar image" style="display:block; height:auto; border: none; text-align:center;padding:0px;" width="180.54" class="mobile-image">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Radar Image End-->
+            <!-- Paragraph Text Start-->
+          <tr>
+            <td style="padding-top: 20px;">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td style="padding: 0 30px 9px;" class="mobile-padding">
+                    <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text"><span style="color:rgb(255, 255, 0)">Paused.&nbsp;</span> We're not even going to pretend to know what happens next, but for those of you in BTD mode this past week, nice trade.</p><br>     
+                     <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text"> Markets are screaming higher after Trump took to X announcing a 90-day pause and substantially lowered reciprocal tariffs of 10% during this period, while increasing the tariff rate charged to China to 125%.</p><br>  
+                     <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text">Given the immense negative pressure on markets over the past week, this announcement resulted in a monster move higher across the board. Stocks up, crypto up, short-term euphoria. For now, it feels good, though I suspect the recent volatility we've become accustomed to will linger.</p><br>  
+                     <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text">Aside from some short-term relief from this self-inflicted volatility, not much has changed on the economic front relative to what we've been highlighting since February.</p><br>  
+                     <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text">Strap in.</p><br>  
+                     <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text">Performance dashboard and updated expected moves are below.</p><br>                     
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Paragraph Text End-->
+            <!-- Chart Image Start-->
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                  <tr>
+                    <td align="center" style="padding: 10px 0 0 0;">
+                      <a href="#">
+                        <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786281/chart_dwdruf.png" alt="chart image" style="display:block; height:auto; border: none; text-align:center;padding:0px;" width="547.08" class="mobile-image">
+                      </a>
+                    </td>
+                  </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Chart Image End-->
+          <!-- TastyCrypto App-->
+          <tr>
+             <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="center" style="padding: 55px 0 0 0;">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786347/mobile_app_2_hewzta.png" alt="mobile app2" style="display:block; height:auto; border: none; text-align:center;padding:0px;" width="547.08" class="mobile-image">
+                    </a>
+                  </td>
+                </tr>
+            </table>
+             </td>
+          </tr>
+          <!-- TastyCrypto App End-->
+           <!-- Performance Image Start-->
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="center" style="padding: 55px 0 0 0;">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786356/performance_wgtzzi.png" alt="performance" style="display:block; height:auto; border: none; text-align:center;padding:0px;" width="303.23" class="mobile-image">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Performance Image End-->
+            <!-- Performance/Price Momentum Image Start-->
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="left" style="padding: 40px 0 5px 30px;" class="mobile-padding">
+                    <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text">Nice short-term bounce, but it's still very bearish out there.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding: 20px 0 0 0;">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786341/market_data_img_rxrnus.png" alt="Momentum image" style="display:block; height:auto; border: none; text-align:center;padding:0px;" width="547.08" class="mobile-image">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Performance/Price Momentum Image End-->
+            <!-- Volatility Image Start-->
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="center" style="padding: 50px 0 0 0;">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786382/volatility_mo6mpv.png" alt="Volatility image" style="display:block; height:auto; border: none; text-align:center;padding:0px;" width="261.06" class="mobile-image">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Volatility Image End-->
+            <!-- Expected Moves Image Start-->
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="left" style="padding: 40px 0 5px 30px;" class="mobile-padding">
+                    <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text">Expected Moves:</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding: 20px 0 0 0;">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786312/expected_moves_bkywe1.png" alt="expected moves image" style="display:block; height:auto; border: none; text-align:center;padding:0px;" width="547.08" class="mobile-image">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Expected Moves Image End-->
+            <!-- Correlations Image Start-->
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="center" style="padding: 50px 0 0 0;">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786291/correlations_ktc7y1.png" alt="Correlations image" style="display:block; height:auto; border: none; text-align:center;padding:0px;" width="359.04" class="mobile-image">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Correlations Image End-->
+            <!-- Correlations CHART Start-->
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="left" style="padding: 40px 0 5px 30px;" class="mobile-padding">
+                    <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text">Correlations: Updated - 4/7/25 - 10:00 AM CT</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding: 20px 0 0 0;">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786335/indicies_fe5d8y.png" alt="indices image" style="display:block; height:auto; border: none; text-align:center;padding:0px;" width="547.08" class="mobile-image">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Correlations CHART End-->
+            <!-- Relative Performance Start-->
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                <tr>
+                  <td align="left" style="padding: 40px 0 5px 30px;" class="mobile-padding">
+                    <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text">Relative performance (weekly):</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" style="padding: 40px 0 5px 30px;" class="mobile-padding">
+                   <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0; padding-bottom: 5px;" class="mobile-text">ETH/BTC &nbsp;<span style="color:rgb(255, 0, 0)">-10%</span></p>
+                   
+                   <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0; padding-bottom: 5px;" class="mobile-text">SOL/BTC  &nbsp;<span style="color:rgb(255, 0, 0)">-2.5%</span></p>
+                   
+                   <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0; padding-bottom: 5px;" class="mobile-text">SOL/ETH &nbsp;<span style="color:rgb(0, 255, 0)">-9%</span></p>
+                   
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Relative Performance End-->
+              <!-- Bored with BTC Start-->
+            <tr>
+              <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                  <tr>
+                    <td align="center" style="padding: 30px 0 0 0;">
+                      <a href="#">
+                        <img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786248/alt_coins_zq5hbf.png" alt="alt coins image" style="display:block;height:auto; border: none; text-align:center; padding:0px;" width="547.08" class="mobile-image">
+                      </a> 
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Bored with BTC End-->
+              <!-- TastyCrypto Show Start-->
+            <tr>
+              <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 10px 0 10px 0;">
+                  <tr>
+                    <td style="padding: 55px 0 80px 0; text-align: center;" class="mobile-padding">
+                      <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 18px; margin: 0; padding-bottom: 5px;" class="mobile-text"><strong>The tastycrypto Show:</strong></p>    
+                       <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0; padding-bottom: 5px;" class="mobile-text"> Mondays & Wednesdays from 4:30pm - 5:00pm Central</p> 
+                       <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0; padding-bottom: 5px;" class="mobile-text"><strong>BAG BATTLES:</strong></p> 
+                       <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text">Mondays on the OTC Live Show from 11am - Noon Central.</p><br>
+                       <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 0;" class="mobile-text">LIVE on <a href="#" style="color: rgb(4, 55, 242);">YouTube</a> | LIVE on <a href="#" style="color: rgb(4, 55, 242);">X</a> | LIVE on <a href="#" style="color: rgb(4, 55, 242);">tastylive</a></p> 
+                       <br>  
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- TastyCrypto Show End-->
+              <!-- Social Media Images Start-->
+<tr>
+  <td align="center" style="padding: 10px 0;">
+    <!-- Top white line -->
+    <table border="0" cellpadding="0" cellspacing="0" width="580" role="presentation" align="center" class="mobile-table horizontal-line">
+      <tr>
+        <td style="border-top: 1px solid rgb(255, 255, 255); line-height: 1px; font-size: 1px;">&nbsp;</td>
+      </tr>
+    </table>
+
+    <!-- 25px spacer between top white line and icons -->
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" class="mobile-table">
+      <tr>
+        <td height="25" style="line-height:20px; font-size:25px;">&nbsp;</td>
+      </tr>
+    </table>
+
+    <!-- Social icons row -->
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" class="social-icons">
+      <tr>
+        <td align="center" class="social-icon" style="padding: 0 20px;">
+          <a href="#"><img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786389/X_wgnfbq.png" alt="twitter icon" width="30" height="30" style="display: block; border: 0;"></a>
+        </td>
+        <td align="center" class="social-icon" style="padding: 0 20px;">
+          <a href="#"><img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786303/DISCORD_qgwpc7.png" alt="discord icon" width="30" height="30" style="display: block; border: 0;"></a>
+        </td>
+        <td align="center" class="social-icon" style="padding: 0 20px;">
+          <a href="#"><img src="https://res.cloudinary.com/dobp5cjiu/image/upload/v1745786396/youtube_fxkxzt.png" alt="youtube icon" width="30" height="30" style="display: block; border: 0;"></a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- 25px spacer between icons and bottom white line -->
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" class="mobile-table">
+      <tr>
+        <td height="25" style="line-height:30px; font-size:25px;">&nbsp;</td>
+      </tr>
+    </table>
+
+    <!-- Bottom white line -->
+    <table border="0" cellpadding="0" cellspacing="0" width="580" role="presentation" align="center" class="mobile-table horizontal-line">
+      <tr>
+        <td style="border-top: 1px solid rgb(255, 255, 255); line-height: 1px; font-size: 1px;">&nbsp;</td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- Social Media Images End-->
+  
+            <!-- Contact Start-->
+           <tr>
+             <td>
+               <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" align="center" class="mobile-table">
+                 <tr>
+                   <td align="center" style="padding: 30px 0;" class="mobile-spacing contact-links">
+                     <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" align="center" class="mobile-table">
+                       <tr>
+                         <td align="center" style="padding: 10px 0;" class="mobile-reduced-padding">
+                           <a href="#" style="color: rgb(255, 255, 255) !important; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-decoration: none;" class="mobile-link">Contact</a>
+                           <span style="color: rgb(255, 255, 255);"> | </span>
+                           <a href="#" style="color: rgb(255, 255, 255) !important; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-decoration: none;" class="mobile-link">Blog</a>
+                           <span style="color: rgb(255, 255, 255);"> | </span>
+                           <a href="#" style="color: rgb(255, 255, 255) !important; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-decoration: none;" class="mobile-link">Learn</a>
+                         </td>
+                       </tr>
+                       <tr>
+                         <td align="center" style="padding: 10px 0;" class="mobile-reduced-padding">
+                           <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin: 0; padding: 10px;" class="footer-text">
+                             If you no longer want to receive our communications, please click 
+                             <a href="#" style="color: rgb(255, 255, 255); text-decoration: underline;">here</a>
+                           </p>
+                         </td>
+                       </tr>
+                       <tr>
+                         <td align="center" style="padding: 10px 20px;" class="mobile-padding">
+                           <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 1.5; margin: 0;" class="footer-text">
+                             tastycrypto is provided solely by tasty Software Solutions, LLC. tasty Software Solutions, LLC is a separate but affiliate company of tastylive, Inc. and tastytrade, Inc. Neither tastylive, Inc. nor tastytrade, Inc. are responsible for the products or services provided by tasty Software Solutions, LLC. Cryptocurrency trading is not suitable for all investors due to the number of risks involved, including volatile market prices, illiquid market conditions, lack of regulatory oversight, market manipulation, and other risks.
+                           </p>
+                         </td>
+                       </tr>
+                       <tr>
+                         <td align="center" style="padding: 10px 20px;" class="mobile-padding">
+                           <p style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 1.5; margin: 0;" class="footer-text">
+                             tastylive, Inc., 19 N. Sangamon St., Chicago, IL 60607, United States
+                           </p>
+                         </td>
+                       </tr>
+                     </table>
+                   </td>
+                 </tr>
+               </table>
+             </td>
+           </tr>
+           <!-- Contact End-->        
+         </table>
+       </td>
+     </tr>
+   </table>   
+ </body>
+ </html>
+
